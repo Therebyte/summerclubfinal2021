@@ -187,8 +187,8 @@ font-size: 80px;
 }
 
 .box{
-  background-color: tomato;
-  border:solid 1px crimson;
+  background-color: rgb(233, 163, 135);
+  border:solid 1px rgb(233, 163, 135);
   border-radius: 25px;
   padding:10px;
   align-items: center;
