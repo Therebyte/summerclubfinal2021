@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet"href="homework.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title></title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+  $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+  </script>
+  
+  <style>
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%50%;
+  }
+  </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-burlywood;">
+        <a class="navbar-brand"style=" color:  rgb(53, 26, 0);" href="#">Home<span style="color: rgb(53, 26, 0);margin-left: 10px;">|</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link"style=" color:  rgb(53, 26, 0);font-size: 20px; margin-left:0px" href="portofolios.html">Portofolios <span class="sr-only"></span><span style="color: rgb(53, 26, 0);">|</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"style="color: rgb(53, 26, 0);font-size: 20px;" href="achievements.html">Experiences <span style="color: rgb(53, 26, 0);">|</span></a>
+            </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: rgb(53, 26, 0);font-size: 20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Others
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="message.html">Another action</a>
+        </div>
+      </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <!-- <ul class="navbar">
+        <img src="" alt="">
+        <li class="pages"><a style="color: rgb(104, 50, 0); text-decoration: none; font-size: 30px; float: left;margin-left: 10px;" href="Homework.html">Home</a></li><span style="color: burlywood;">|</span>
+        <li class="pages"><a style="color: rgb(104, 50, 0); text-decoration: none; font-size: 30px;" href="portofolios.html">Portofolios</a></li><span style="color: burlywood;">|</span>
+        <li class="pages"><a style="color: rgb(104, 50, 0); text-decoration: none; font-size: 30px;" href="achievements.html">Achievements</a></li><span style="color: burlywood;">|</span>
+        <li class="pages"><a style="color: rgb(104, 50, 0); text-decoration: none; font-size: 30px;" href="suggestion.html">Suggestions</a></li><span style="color: burlywood;">|</span>
+    </ul> -->
+    <div style="padding-left: 20px;"> 
+    <p style="color: bisque;font-family:'Antonio';font-size: 100px;margin-top: 40px;margin-bottom: 20px;">Welcome To My Website Yeay!</p>
+    <h2>Hello! I'm Theresia Sanvia Santoso, you can call me There!</h2>
+    <style>
+        img { float: left;
+
+        }
+    </style>
+    <img src="Me.jpg" alt="About Me" width="300" height="400">
+    <div class="paragraph1"> 
+    <h3 style="color:white;">I'm a 11 grader in Sang Timur Senior High School </h3>
+    <div>
+    <p style="line-height: 25px;">A creative, hard-working, love challenges, self-motivated and reliable person.
+        I am a mature team worker , adaptable to all challenging situations and work well in both team work and individualistic 
+        and i can works under pressure and strict deadlines. I have good sense and taste in art and also love to learn new things. 
+        <b><i>And currently joining Generation Girls Summer Club Class, "How to build a website".</i></b>
+    </p>
+    </div>
+    <h3 style="color: white;"><b>Things That i Loves :</b></h3>
+    <ul style="line-height: 25px;">
+        <li>Singing 🎤 </li>
+        <li>Making music with instruments 🎶 (guitar, piano, ukulele)</li>
+        <li>Writting ✍🏻</li>
+        <li>Reading 📖📚 (books, gain knowledge hahah)</li>
+        <li>Drawing, making illustration 🖼️✏️🖥️ (manual or graphic)</li>
+        <li>Meet new people, exchange idea with peoples 👥</li>
+    </ul>
+    <h3 style="color: white;"><b>Let's be friends!</b></h3>
+    <a href="http://www.instagram.com/theresia_sanviasantoso" style="color:blanchedalmond;"> Instagram: @theresia_sanviasantoso</a>
+    <h3 style="color: white;"><b> N i c e    T o    M e e t    Y o u   ! </b></h3>
+    </div>
+    </div>
+    <br>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

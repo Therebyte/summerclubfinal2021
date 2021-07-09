@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Epilogue:200,300,500,700'); 
+@font-face { 
+  font-family: Antonio; 
+  src: url('Antonio\ Fischer.ttf');
+}
+@font-face { 
+  font-family: geosanslight; 
+  src: url('GeosansLight.ttf');
+}
+body { 
+    color: whitesmoke!important;
+    background-color:rgb(133, 89, 57)!important;
+    font-family: Epilogue;
+    font-size:large;
+    padding-top: 50pt;
+    padding-bottom: 80pt;
+    padding-left: 60px;
+}
+
+}
+.portofolios{
+    background-color: rgb(133, 89, 57)
+}
+  .paragraph1{padding-left: 320px;}
+  .navbar{list-style-type: none;
+    background-color:wheat  ;
+    font-family:"geosanslight";
+    text-align: right;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    }
+    .pages {
+        display: inline;
+        text-decoration: none; 
+        font-size:25px;
+        padding-right: 20px;
+        padding-left: 0px;
+        }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .item{
+     
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        padding-left: 10px;
+        width: 100%;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        margin-left: 100px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      .fade {
+        margin: 50px;
+        padding: 0px;
+        opacity: 1;
+      }
+      .tombol {
+        background-color:whitesmoke;
+        font-family: Epilogue;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      ::placeholder{
+        font-family: Epilogue;
+        font-size: larger;
+        line-height: 5vh;
+        text-indent: 10px;
+      }
+      
+      textarea{
+        border-radius: 15px;
+      }
+
+      .fadein{
+        opacity: 60%;
+      }
+
+      .fadein:hover{
+        opacity: 100%;
+        transition: opacity 2s;
+      }
